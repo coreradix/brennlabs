@@ -1,69 +1,94 @@
 ---
-
 import brennlabsIcon from "../assets/brennlabs_icon.svg?raw";
-
 ---
-<section class="bg-gray-50/80 px-4 md:px-8" aria-labelledby="jumbotron-heading-6">
 
-   <div class="home-hero max-w-6xl mx-auto py-6">
+<section
+    class="bg-gray-50/80 px-4 md:px-8"
+    aria-labelledby="jumbotron-heading-6"
+>
+    <div class="home-hero max-w-6xl mx-auto py-6">
+        <div class="bg-icon">
+            <Fragment set:html={brennlabsIcon} />
+        </div>
 
-      <div class="bg-icon">
-         <Fragment set:html={brennlabsIcon} />
-      </div>
-      
-      <div class="p-6 w-full md:p-8 my-[60px]">
-         <h2 id="jumbotron-heading-6" class="text-3xl mb-3 font-bold text-slate-900 md:text-4xl">It's the dawn of the <span class="font-semibold text-cyan-600">3D printing </span> era.</h2>
-         <p class="text-base text-slate-900 leading-relaxed">
-            From customizable STL downloads to unique 3D-printed products, toys, and accessories—<span class="font-semibold text-cyan-600">BrennLabs </span> is your one-stop shop.
-         </p>
-      </div>
+        <div class="p-6 w-full md:p-8 my-[60px]">
+            <h2
+                id="jumbotron-heading-6"
+                class="text-3xl mb-3 font-bold text-slate-900 md:text-4xl"
+            >
+                It's the dawn of the <span class="font-semibold text-cyan-600"
+                    >3D printing
+                </span> era.
+            </h2>
+            <p class="text-base text-slate-900 leading-relaxed">
+                From customizable STL downloads to unique 3D-printed products,
+                toys, and accessories—<span class="font-semibold text-cyan-600"
+                    >BrennLabs
+                </span> is your one-stop shop.
+            </p>
+        </div>
 
-      <div class="grid md:grid-cols-2 gap-6 mt-6">
-         <div class="w-full p-8 bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:border-white/20 hover:bg-white/10">
-            <h2 class="text-slate-900 text-2xl font-semibold">Piso STL</h2>
-            <div class="mt-4">
-               <p class="text-base text-slate-600 leading-relaxed">
-                  Very affordable STL downloaders built for makers, sellers, and hobbyists. Customize designs in seconds and download print-ready STL files <span class="font-semibold text-cyan-600">for only 1 php per printable product!</span>
-               </p>
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div
+                class="w-full p-8 bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:border-white/20 hover:bg-white/10"
+            >
+                <h2 class="text-slate-900 text-2xl font-semibold">Piso STL</h2>
+                <div class="mt-4">
+                    <p class="text-base text-slate-600 leading-relaxed">
+                        Very affordable STL downloaders built for makers,
+                        sellers, and hobbyists. Customize designs in seconds and
+                        download print-ready STL files <span
+                            class="font-semibold text-cyan-600"
+                            >for only 1 php per printable product!</span
+                        >
+                    </p>
+                </div>
+                <a
+                    href="#"
+                    class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-cyan-500 bg-cyan-500 mt-6 inline-block hover:bg-cyan-700 hover:border-cyan-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
+                >
+                    Explore Products
+                </a>
             </div>
-            <a href="#"
-               class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-cyan-500 bg-cyan-500 mt-6 inline-block hover:bg-cyan-700 hover:border-cyan-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500">
-               Explore Products
-            </a>
-         </div>
 
-         <div class="p-6 w-full md:p-8 py-[80px]">
-            <h2 class="text-slate-900 text-2xl font-semibold">Online Shop</h2>
-            <div class="mt-4">
-               <p class="text-base text-slate-900 leading-relaxed">
-                  Discover original 3D-printed products, games, toys, collectibles, accessories, and everyday creations designed and manufactured by <span class="font-semibold text-cyan-600">BrennLabs</span>.
-               </p>
+            <div class="p-6 w-full md:p-8 py-[80px]">
+                <h2 class="text-slate-900 text-2xl font-semibold">
+                    Online Shop
+                </h2>
+                <div class="mt-4">
+                    <p class="text-base text-slate-900 leading-relaxed">
+                        Discover original 3D-printed products, games, toys,
+                        collectibles, accessories, and everyday creations
+                        designed and manufactured by <span
+                            class="font-semibold text-cyan-600">BrennLabs</span
+                        >.
+                    </p>
+                </div>
+                <a
+                    href="#"
+                    class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-cyan-500 bg-cyan-500 mt-6 inline-block hover:bg-cyan-700 hover:border-cyan-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
+                >
+                    Go Shopping
+                </a>
             </div>
-            <a href="#"
-               class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-cyan-500 bg-cyan-500 mt-6 inline-block hover:bg-cyan-700 hover:border-cyan-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500">
-               Go Shopping
-            </a>
-         </div>
-      </div>
-   </div>
-</div>
+        </div>
+    </div>
 </section>
 
 <style>
+    .home-hero {
+        position: relative;
+    }
 
-   .home-hero {
-      position: relative;
-   }
-   
-   .bg-icon {
-      position: absolute;
-      bottom: 0;
-      left: calc(100% - 300px);
-      z-index: -1;
-   }
+    .bg-icon {
+        position: absolute;
+        bottom: 0;
+        left: calc(100% - 300px);
+        z-index: -1;
+    }
 
-   .bg-icon > :global(svg) {
-      width: 300px;
-      height: auto;
-   }
+    .bg-icon > :global(svg) {
+        width: 300px;
+        height: auto;
+    }
 </style>
