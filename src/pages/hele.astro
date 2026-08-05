@@ -1,0 +1,53 @@
+---
+import HeleLayout from "../layouts/HeleLayout.astro";
+import heleLogo from "../assets/images/hele.webp";
+---
+
+<HeleLayout>
+    <div class="text-center">
+        <img
+            src={heleLogo.src}
+            alt="Hele Lamps Logo"
+            class="mx-auto mb-8 max-w-xs h-auto drop-shadow-lg"
+            width={heleLogo.width}
+            height={heleLogo.height}
+        />
+        <p class="text-xl sm:text-2xl font-medium rainbow-text uppercase">
+            HELE LAMPS WILL BE LAUNCHED SOON
+        </p>
+    </div>
+
+    <style>
+        .rainbow-text {
+            background: linear-gradient(
+                90deg,
+                #ff0000,
+                #ff7f00,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8b00ff,
+                #ff0000
+            );
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-sweep 8s ease-in-out infinite;
+        }
+
+        @keyframes rainbow-sweep {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</HeleLayout>
+>

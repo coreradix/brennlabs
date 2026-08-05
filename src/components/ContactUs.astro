@@ -1,0 +1,84 @@
+---
+import ContactForm from "./vue/ContactForm.vue";
+---
+
+<section id="contact-us" class="py-20 sm:py-24 bg-gray-50/80">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
+        <!-- Full-width Heading Section -->
+        <div class="text-center mb-16">
+            <span
+                data-motion="badge"
+                class="inline-block px-3 py-1 text-sm font-medium text-cyan-600 bg-cyan-100 rounded-full mb-4"
+                style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+            >
+                Get in Touch
+            </span>
+            <h2
+                data-motion="heading"
+                class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4"
+                style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+            >
+                <span data-animate="heading" style="opacity: 1;">
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >Contact</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >Us</span
+                    ></span
+                >
+            </h2>
+            <p
+                data-motion="text"
+                class="text-lg text-slate-600"
+                style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+            >
+                <span data-animate="text" style="opacity: 1;">
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >Have</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >a</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >project</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >in</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >mind?</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >Let's</span
+                    >
+                    <span
+                        class="motion-word"
+                        style="display: inline-block; opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >talk.</span
+                    ></span
+                >
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="max-w-lg mx-auto">
+            <ContactForm client:load />
+        </div>
+    </div>
+</section>
