@@ -2,8 +2,10 @@
 import "../styles/global.css";
 import brennlabsText from "../assets/brennlabs_text.svg?raw";
 import brennlabsLogo from "../assets/brennlabs.svg?raw";
-import pisoStlImage from "../assets/pisostl.webp";
 import { Font } from "astro:assets";
+import shopeeIcon from "../assets/icons/shopee.svg";
+import lazadaIcon from "../assets/icons/lazada.svg";
+import tiktokIcon from "../assets/icons/tiktok.svg";
 ---
 
 <script>
@@ -246,6 +248,80 @@ import { Font } from "astro:assets";
         </div> -->
 
         <slot />
+
+        <footer
+            id="_footer_simple_centered_v1_001"
+            class="py-12 bg-gray-50/80 border-t border-slate-200"
+        >
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
+                <div class="text-center">
+                    <div
+                        data-motion="logo"
+                        class="flex items-center justify-center gap-2 mb-6"
+                        style="opacity: 1; transform: scale(1); filter: blur(0px);"
+                    >
+                        <Fragment set:html={brennlabsLogo} />
+                    </div>
+
+                    <div
+                        data-motion="social"
+                        class="flex justify-center gap-6 mb-8"
+                        style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                    >
+                        <a
+                            data-motion="button"
+                            href="https://shopee.ph/shop/1857845118"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-cyan-100 hover:text-cyan-600 transition-colors"
+                            style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >
+                            <img
+                                src={shopeeIcon.src}
+                                class="w-5 h-5"
+                                alt="Shopee"
+                            />
+                        </a>
+                        <a
+                            data-motion="button"
+                            href="https://s.lazada.com.ph/s.ZgSxSr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-cyan-100 hover:text-cyan-600 transition-colors"
+                            style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >
+                            <img
+                                src={lazadaIcon.src}
+                                class="w-5 h-5"
+                                alt="Lazada"
+                            />
+                        </a>
+                        <a
+                            data-motion="button"
+                            href="https://www.tiktok.com/@brennlabs"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-cyan-100 hover:text-cyan-600 transition-colors"
+                            style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                        >
+                            <img
+                                src={tiktokIcon.src}
+                                class="w-5 h-5"
+                                alt="TikTok"
+                            />
+                        </a>
+                    </div>
+
+                    <p
+                        data-motion="copyright"
+                        class="text-sm text-slate-500"
+                        style="opacity: 1; transform: translateY(0px); filter: blur(0px);"
+                    >
+                        © 2026 BrennLabs. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
 
