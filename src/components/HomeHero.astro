@@ -1,5 +1,8 @@
 ---
 import brennlabsIcon from "../assets/brennlabs_icon.svg?raw";
+import lazadaIcon from "../assets/icons/lazada.svg";
+import shopeeIcon from "../assets/icons/shopee.svg";
+import tiktokIcon from "../assets/icons/tiktok.svg";
 ---
 
 <section
@@ -16,15 +19,14 @@ import brennlabsIcon from "../assets/brennlabs_icon.svg?raw";
                 id="jumbotron-heading-6"
                 class="text-3xl mb-3 font-bold text-slate-900 md:text-4xl"
             >
-                It's the dawn of the <span class="font-semibold text-cyan-600"
-                    >3D printing
-                </span> era.
+                Manufacturing Ideas Into Reality
             </h2>
-            <p class="text-base text-slate-900 leading-relaxed">
-                From customizable STL downloads to unique 3D-printed products,
-                toys, and accessories—<span class="font-semibold text-cyan-600"
-                    >BrennLabs
-                </span> is your one-stop shop.
+            <p
+                class="text-base text-slate-900 leading-relaxed w-full md:max-w-170"
+            >
+                We design and manufacture custom 3D printed products,
+                prototypes, branded merchandise, lamps, toys, and functional
+                parts.
             </p>
         </div>
 
@@ -32,44 +34,60 @@ import brennlabsIcon from "../assets/brennlabs_icon.svg?raw";
             <div
                 class="w-full p-8 bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:border-white/20 hover:bg-white/10"
             >
-                <h2 class="text-slate-900 text-2xl font-semibold">Piso STL</h2>
+                <h2 class="text-slate-900 text-2xl font-semibold">
+                    Do you have a product idea?
+                </h2>
                 <div class="mt-4">
                     <p class="text-base text-slate-600 leading-relaxed">
-                        Very affordable STL downloaders built for makers,
-                        sellers, and hobbyists. Customize designs in seconds and
-                        download print-ready STL files <span
-                            class="font-semibold text-cyan-600"
-                            >for only 1 php per printable product!</span
-                        >
+                        Any custom design or manufacturing requirement? Tell us
+                        what you need and we'll provide a detailed quotation
+                        tailored to your project.
                     </p>
                 </div>
                 <a
                     href="#"
                     class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-cyan-500 bg-cyan-500 mt-6 inline-block hover:bg-cyan-700 hover:border-cyan-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
                 >
-                    Explore Products
+                    Request a Quote
                 </a>
             </div>
 
-            <div class="p-6 w-full md:p-8 py-[80px]">
+            <div class="p-6 w-full md:p-8 py-20">
                 <h2 class="text-slate-900 text-2xl font-semibold">
-                    Online Shop
+                    We are live on our e-commerce platforms!
                 </h2>
                 <div class="mt-4">
                     <p class="text-base text-slate-900 leading-relaxed">
-                        Discover original 3D-printed products, games, toys,
-                        collectibles, accessories, and everyday creations
-                        designed and manufactured by <span
-                            class="font-semibold text-cyan-600">BrennLabs</span
-                        >.
+                        We offer customizable 3D printed products, imported toys
+                        and consumer electronics delivered to your doorsteps.
                     </p>
                 </div>
-                <a
-                    href="#"
-                    class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-cyan-500 bg-cyan-500 mt-6 inline-block hover:bg-cyan-700 hover:border-cyan-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
-                >
-                    Go Shopping
-                </a>
+                <div class="flex flex-row gap-10 align-center pt-10 ps-0">
+                    <a
+                        href="https://shopee.ph/shop/1857845118"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={shopeeIcon.src}
+                            class="w-[46px] h-auto -translate-y-1"
+                        />
+                    </a>
+                    <a
+                        href="https://s.lazada.com.ph/s.ZgSxSr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src={lazadaIcon.src} class="w-[46px] h-auto" />
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@brennlabs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src={tiktokIcon.src} class="w-[48px] h-auto" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>

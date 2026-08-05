@@ -185,334 +185,11 @@ import { Font } from "astro:assets";
                     <ul
                         class="flex flex-col gap-8 font-semibold text-sm text-slate-900 lg:flex-row max-lg:p-6 lg:ml-12"
                     >
-                        <li class="block lg:hidden">
-                            <a
-                                href="#"
-                                class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
-                                aria-current="page">Piso STL</a
-                            >
-                        </li>
-
-                        <li class="max-lg:relative hidden lg:block">
-                            <button
-                                id="mega-menu-button"
-                                type="button"
-                                aria-haspopup="true"
-                                aria-controls="mega-menu"
-                                aria-expanded="false"
-                                class="flex items-center gap-2 cursor-pointer hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
-                            >
-                                Piso STL
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="size-3 fill-current overflow-visible"
-                                    viewBox="0 0 512 512"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M511 138.2c-3-13.8-11.2-23.1-25.2-27-15.3-4.3-28 .4-38.8 11.3-41.9 42-83.7 84.1-125.5 126.2-21 21-42.2 41.9-65.4 65L64.7 122.3c-16-16-38.8-16.9-53.6-2.8s-15 38 .6 53.7C83.9 245.8 156.4 318.3 229 390.5c15.8 15.7 38 16.1 53.5.6 73-72.5 145.7-145.2 218.2-218.1 9.5-9.6 13.3-21.4 10.3-34.8"
-                                        data-original="#000000"></path>
-                                </svg>
-                            </button>
-
-                            <!-- Dropdown menu -->
-                            <div
-                                id="mega-menu"
-                                aria-labelledby="mega-menu-button"
-                                class="hidden w-full absolute shadow-md bg-white border-b border-slate-300 px-6 py-8 pb-2 right-0 left-0 top-6 z-50 lg:top-[68px]"
-                            >
-                                <div
-                                    class="max-w-6xl mx-auto flex flex-col gap-x-12 gap-y-6 lg:flex-row"
-                                >
-                                    <!-- IMAGE -->
-                                    <div
-                                        class="max-w-[460px] w-full aspect-[1/1] flex items-start justify-center pt-6"
-                                    >
-                                        <img
-                                            src={pisoStlImage.src}
-                                            alt="product-img"
-                                            class="w-full h-auto object-cover rounded-lg"
-                                        />
-                                    </div>
-
-                                    <!-- MENU -->
-                                    <div
-                                        class="grid gap-6 p-6 w-full lg:grid-cols-4"
-                                    >
-                                        <div>
-                                            <p
-                                                class="font-semibold mb-6 text-lg text-white"
-                                            >
-                                                Personal
-                                            </p>
-                                            <ul
-                                                class="space-y-4 text-sm font-medium"
-                                            >
-                                                <li
-                                                    class="text-cyan-500 underline underline-offset-5"
-                                                >
-                                                    <a href="#"
-                                                        >Class Nameplates</a
-                                                    >
-                                                </li>
-                                                <li
-                                                    class="text-cyan-500 underline underline-offset-5"
-                                                >
-                                                    <a href="#"
-                                                        >Name Keychains</a
-                                                    >
-                                                </li>
-                                                <li class="text-slate-400">
-                                                    <a href="#" class="block">
-                                                        <span class="block"
-                                                            >Pet Tags</span
-                                                        >
-                                                        <span
-                                                            class="text-xs font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <p
-                                                class="font-semibold mb-6 text-lg text-white"
-                                            >
-                                                Home
-                                            </p>
-                                            <ul
-                                                class="space-y-4 text-slate-400 text-sm font-medium"
-                                            >
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Address Signs</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Family Name Signs</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Welcome Signs</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >House Numbers</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <p
-                                                class="font-semibold mb-6 text-lg text-white"
-                                            >
-                                                Memorial
-                                            </p>
-                                            <ul
-                                                class="space-y-4 text-slate-400 text-sm font-medium"
-                                            >
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Memorial Urns</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Pawprint Stand</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <p
-                                                class="font-semibold mb-6 text-lg text-white"
-                                            >
-                                                Events
-                                            </p>
-                                            <ul
-                                                class="space-y-4 text-slate-400 text-sm font-medium"
-                                            >
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Cake Toppers</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Table Numbers</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Place Cards</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <p
-                                                class="font-semibold mb-6 text-lg text-white"
-                                            >
-                                                Office
-                                            </p>
-                                            <ul
-                                                class="space-y-4 text-slate-400 text-sm font-medium"
-                                            >
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Desk Nameplates</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >QR Code Stands</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Employee Awards</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <p
-                                                class="font-semibold mb-6 text-lg text-white"
-                                            >
-                                                Sports
-                                            </p>
-                                            <ul
-                                                class="space-y-4 text-slate-400 text-sm font-medium"
-                                            >
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Pickleball Endcaps</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block">
-                                                        <span
-                                                            class="block text-slate-400"
-                                                            >Badminton Endcaps</span
-                                                        >
-                                                        <span
-                                                            class="text-xs text-slate-400 font-normal italic"
-                                                            >Coming Soon</span
-                                                        >
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
                         <li>
                             <a
                                 href="#"
                                 class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
-                                >Online Shop</a
+                                >What we do</a
                             >
                         </li>
 
@@ -520,15 +197,7 @@ import { Font } from "astro:assets";
                             <a
                                 href="#"
                                 class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
-                                >Pricing</a
-                            >
-                        </li>
-
-                        <li>
-                            <a
-                                href="#"
-                                class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
-                                >About</a
+                                >Featured Products</a
                             >
                         </li>
                     </ul>
@@ -538,7 +207,7 @@ import { Font } from "astro:assets";
                     <a
                         href="#"
                         class="py-2 px-3.5 text-sm rounded-md font-semibold text-white border border-cyan-100 bg-cyan-500 hover:bg-cyan-600 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
-                        >Sign In</a
+                        >Contact Us</a
                     >
 
                     <button
@@ -566,7 +235,7 @@ import { Font } from "astro:assets";
             </div>
         </nav>
 
-        <div
+        <!-- <div
             role="region"
             aria-label="Promotion"
             class="bg-slate-900 px-4 py-2.5 relative flex items-center justify-center text-center border-b border-slate-800 md:px-6"
@@ -574,7 +243,7 @@ import { Font } from "astro:assets";
             <p class="text-sm text-slate-50 font-medium pr-6 leading-relaxed">
                 THIS IS A PREVIEW - WEBSITE IS STILL UNDER CONSTRUCTION
             </p>
-        </div>
+        </div> -->
 
         <slot />
     </body>
