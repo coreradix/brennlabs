@@ -1,9 +1,10 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-import vue from "@astrojs/vue";
 
 import cloudflare from "@astrojs/cloudflare";
+
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
