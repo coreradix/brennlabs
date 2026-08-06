@@ -53,7 +53,9 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
     });
 
     // Active section highlighting for desktop navigation links
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    const navLinks = document.querySelectorAll(
+        'nav a[href^="#"]:not(.no-active-highlight)',
+    );
     const sections = Array.from(navLinks)
         .map((link) => document.querySelector(link.getAttribute("href")!))
         .filter((section): section is Element => section !== null);
@@ -227,7 +229,7 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
                 <div class="flex items-center gap-4 ml-auto lg:block">
                     <a
                         href="#contact-us"
-                        class="hidden lg:inline-flex py-2 px-3.5 text-sm rounded-md font-semibold text-white border border-cyan-100 bg-cyan-500 hover:bg-cyan-600 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
+                        class="hidden lg:inline-flex py-2 px-3.5 text-sm rounded-md font-semibold text-white border border-cyan-100 bg-cyan-500 hover:bg-cyan-600 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 no-active-highlight"
                         >Contact Us</a
                     >
 
