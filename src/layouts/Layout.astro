@@ -52,10 +52,8 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
         }
     });
 
-    // Active section highlighting for navigation links
-    const navLinks = document.querySelectorAll(
-        'nav a[href^="#"], #collapseMenu a[href^="#"]',
-    );
+    // Active section highlighting for desktop navigation links
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
     const sections = Array.from(navLinks)
         .map((link) => document.querySelector(link.getAttribute("href")!))
         .filter((section): section is Element => section !== null);
@@ -71,6 +69,9 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute("id");
                 if (id) {
+                    // Update URL hash without adding to history
+                    history.replaceState(null, "", `#${id}`);
+
                     navLinks.forEach((link) => {
                         const href = link.getAttribute("href");
                         if (href === `#${id}`) {
@@ -298,7 +299,7 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
                 <li>
                     <a
                         href="#home"
-                        class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
+                        class="block w-full py-3 px-4 hover:text-cyan-500 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
                         >What we do</a
                     >
                 </li>
@@ -306,7 +307,7 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
                 <li>
                     <a
                         href="#featured-products"
-                        class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
+                        class="block w-full py-3 px-4 hover:text-cyan-500 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
                         >Featured Products</a
                     >
                 </li>
@@ -314,7 +315,7 @@ import tiktokIcon from "../assets/icons/tiktok.svg";
                 <li>
                     <a
                         href="#why-choose-us"
-                        class="hover:text-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
+                        class="block w-full py-3 px-4 hover:text-cyan-500 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
                         >Why Choose Us</a
                     >
                 </li>
