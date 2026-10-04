@@ -1,19 +1,27 @@
 {
-	"compatibility_date": "2026-06-11",
-	"compatibility_flags": ["global_fetch_strictly_public"],
-	"name": "brennlabs",
-	"main": "@astrojs/cloudflare/entrypoints/server",
-	"assets": {
-		"directory": "./dist",
-		"binding": "ASSETS",
-	},
-	"observability": {
-		"enabled": true
-	},
-	"kv_namespaces": [
+  "compatibility_date": "2026-06-11",
+  "compatibility_flags": ["global_fetch_strictly_public"],
+  "name": "brennlabs",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "kv_namespaces": [
     {
       "binding": "SESSION",
-      "id": "0a640731859c431daaa1d47f436d67a3"
-    }
-  ]
+      "id": "0a640731859c431daaa1d47f436d67a3",
+    },
+  ],
+
+  "previews": {
+    // ...
+    "vars": {
+      "XENDIT_WEBHOOK_TOKEN": "",
+    },
+    // ...
+  },
 }
