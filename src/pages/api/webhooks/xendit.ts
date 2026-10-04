@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { env } from "cloudflare:workers";
 
 export const prerender = false;
 
@@ -34,6 +35,18 @@ export const HEAD: APIRoute = () => methodNotAllowed();
 
 export const POST: APIRoute = async ({ request }) => {
   const startedAt = Date.now();
+
+  // Fail closed when the secret is unset so misconfiguration is loud, not open.
+  const expectedToken = env.XENDIT_WEBHOOK_TOKEN;
+  if (!expectedToken) {
+    console.warn("[xendit-router] token_not_configured");
+    return json({ ok: false, code: "TOKEN_NOT_CONFIGURED" }, 500);
+  }
+  if (request.headers.get("x-callback-token") !== expectedToken) {
+    console.warn("[xendit-router] invalid_token");
+    return json({ ok: false, code: "INVALID_TOKEN" }, 401);
+  }
+
   const raw = await request.text();
 
   let parsed: unknown;
@@ -62,7 +75,7 @@ export const POST: APIRoute = async ({ request }) => {
       `[xendit-router] unknown_prefix reference_id=${referenceId} prefix=${prefix || "(none)"}`,
     );
     return json(
-      { ok: false, code: "UNKNOWN_PREFIX", reference_id: referenceId },
+      { ok: false, code: "UNKNOWN_PAYLOAD", reference_id: referenceId },
       200,
     );
   }
